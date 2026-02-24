@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <title>Asistencia por WhatsApp | Contacto y Soporte 24 hs</title>
-  <meta name="description" content="Canal de contacto y asistencia informativa por WhatsApp. Soporte para registro, acceso y consultas. Atención personalizada 24 hs." />
+  <title>Asistencia por WhatsApp | Contacto y Soporte</title>
+  <meta name="description" content="Canal de contacto y asistencia informativa por WhatsApp. Ayuda con registro, acceso y consultas. Atención personalizada." />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b0b0b" />
   <link rel="icon" href="data:," />
 
   <!-- Tipografía e íconos -->
@@ -15,94 +16,106 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <!-- Tu CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- (Opcional) Google tag: pegá acá tus IDs nuevos si los tenés -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-    gtag('config', 'AW-XXXXXXX');
-  </script>
-  -->
 </head>
 
 <body>
-  <main class="container">
-    <div class="brand">
-      <div class="logo">Soporte</div>
-      <p class="brand-subtitle">Contacto y asistencia informativa</p>
-    </div>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <main class="wrap" id="contenido">
+    <header class="brand" aria-label="Encabezado">
+      <div class="brand-mark" aria-hidden="true">
+        <span class="dot"></span>
+      </div>
+
+      <div class="brand-text">
+        <p class="brand-kicker">Canal de contacto</p>
+        <h1 class="brand-title">Asistencia por WhatsApp</h1>
+        <p class="brand-subtitle">Soporte para registro, acceso y consultas.</p>
+      </div>
+    </header>
 
     <section class="card" aria-label="Contacto y asistencia">
-      <div class="badge">
+      <div class="badge" role="note">
         <i class="fas fa-check-circle" aria-hidden="true"></i>
-        Canal de contacto y asistencia
+        Atención personalizada
       </div>
 
-      <h1>Asistencia por WhatsApp</h1>
-      <p class="subtitle">Soporte para registro, acceso y consultas. Atención personalizada.</p>
+      <div class="content">
+        <h2 class="section-title">¿En qué podemos ayudarte?</h2>
 
-      <div class="info-box">
-        <p class="info-title">¿En qué podemos ayudarte?</p>
-        <ul class="info-list">
-          <li><i class="fas fa-user-check" aria-hidden="true"></i> Guía de registro y validación</li>
-          <li><i class="fas fa-key" aria-hidden="true"></i> Ayuda con acceso y recuperación</li>
-          <li><i class="fas fa-headset" aria-hidden="true"></i> Consultas y soporte general</li>
+        <ul class="features" aria-label="Servicios">
+          <li>
+            <span class="icon"><i class="fas fa-user-check" aria-hidden="true"></i></span>
+            <div>
+              <p class="feature-title">Guía de registro y validación</p>
+              <p class="feature-text">Te orientamos paso a paso para completar el alta.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="icon"><i class="fas fa-key" aria-hidden="true"></i></span>
+            <div>
+              <p class="feature-title">Ayuda con acceso</p>
+              <p class="feature-text">Recuperación de cuenta y soporte de ingreso.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="icon"><i class="fas fa-headset" aria-hidden="true"></i></span>
+            <div>
+              <p class="feature-title">Consultas generales</p>
+              <p class="feature-text">Información y asistencia por WhatsApp.</p>
+            </div>
+          </li>
         </ul>
 
-        <p class="clarity">
-          Este sitio es <strong>informativo y de contacto</strong>. No operamos juegos de azar ni procesamos depósitos o retiros.
-          Cualquier actividad regulada ocurre únicamente en plataformas oficiales autorizadas.
+        <div class="notice" role="note" aria-label="Aviso legal">
+          <p>
+            Este sitio es <strong>informativo y de contacto</strong>. No operamos actividades reguladas ni procesamos pagos.
+            Cualquier acción regulada ocurre únicamente en plataformas oficiales autorizadas.
+          </p>
+        </div>
+
+        <a href="#" id="cta-button" class="cta" rel="nofollow noopener" aria-label="Contactar por WhatsApp">
+          <span class="cta-ico" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
+          <span class="cta-text" id="btn-text">CONTACTAR POR WHATSAPP</span>
+          <span class="cta-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <p class="micro">
+          Tiempo de respuesta estimado: <strong>rápido</strong>. Atención 24 hs.
         </p>
-      </div>
 
-      <a href="#" id="cta-button" class="btn-whatsapp" rel="nofollow">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        <span id="btn-text">CONTACTAR POR WHATSAPP</span>
-      </a>
+        <div class="divider" role="separator" aria-hidden="true"></div>
 
-      <p class="micro">
-        Tiempo de respuesta estimado: <strong>rápido</strong>. Atención 24 hs.
-      </p>
-
-      <div class="divider"></div>
-
-      <div class="contact-block">
-        <p class="contact-title">Contacto alternativo</p>
-        <p class="contact-line">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
-          <a id="support-email" href="mailto:soporte@tu-cajero-virtual.com.ar">soporte@tu-cajero-virtual.com.ar</a>
-        </p>
+        <div class="alt">
+          <p class="alt-title">Contacto alternativo</p>
+          <p class="alt-line">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a id="support-email" href="mailto:soporte@tu-cajero-virtual.com.ar">soporte@tu-cajero-virtual.com.ar</a>
+          </p>
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="legal-links">
+    <footer class="footer" aria-label="Pie de página">
+      <nav class="legal-links" aria-label="Enlaces legales">
         <a href="politicas.html" target="_blank" rel="noopener">Política de Privacidad</a>
-        <span>·</span>
+        <span aria-hidden="true">·</span>
         <a href="terminos.html" target="_blank" rel="noopener">Términos y Condiciones</a>
-      </div>
+      </nav>
 
-      <div class="company-info">
-        <!--<p><strong>Responsable del sitio:</strong> <span id="owner-name">[TU NOMBRE / RAZÓN SOCIAL]</span></p> -->
-        <p><strong>Ubicación:</strong> Argentina</p>
+      <div class="fineprint">
+        <p><span class="pill">+18</span> Juego responsable. Si sentís que perdés el control, buscá ayuda profesional.</p>
+        <p>Ubicación: Argentina</p>
       </div>
-
-      <p class="footer-clarity">
-        Este sitio es informativo y de contacto. No operamos juegos de azar ni procesamos depósitos o retiros.
-        Las actividades reguladas se realizan únicamente en plataformas oficiales autorizadas.
-      </p>
 
       <p class="copyright">© 2026 — Canal de Asistencia</p>
     </footer>
   </main>
 
-  <!-- Tu JS -->
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
