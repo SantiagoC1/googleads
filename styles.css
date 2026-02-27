@@ -335,13 +335,94 @@ body {
   margin-bottom: 12px;
 }
 
-/* MEDIA QUERIES PARA MÓVILES PEQUEÑOS */
-@media (max-width: 400px) {
-  .brand-title { font-size: 1.3rem; }
-  .content { padding: 16px; padding-top: 45px; }
-  .cta-text { font-size: 0.8rem; }
-  .cta-ico, .cta-arrow { width: 32px; height: 32px; }
-  .section-title { font-size: 1rem; }
-  .feature-title { font-size: 0.9rem; }
-  .feature-text { font-size: 0.82rem; }
+/* ============================================================
+   SISTEMA DE ADAPTACIÓN UNIVERSAL (MEDIA QUERIES)
+   ============================================================ */
+
+/* 1. Ajustes para móviles muy pequeños (Menos de 380px) */
+@media (max-width: 380px) {
+    body {
+        padding: 10px; /* Aprovechamos cada pixel */
+    }
+
+    .brand-title {
+        font-size: 1.25rem;
+    }
+
+    .content {
+        padding: 14px;
+        padding-top: 45px;
+    }
+
+    /* Reducimos el botón de WhatsApp para que no se amontone */
+    .cta {
+        padding: 10px;
+        font-size: 0.82rem;
+    }
+    
+    .cta-ico, .cta-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cta-ico i, .cta-arrow i {
+        font-size: 1rem;
+    }
+
+    /* Hacemos los iconos de las características un poco más pequeños */
+    .icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 10px;
+    }
+
+    .feature-title {
+        font-size: 0.88rem;
+    }
+
+    .feature-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* 2. Ajustes para pantallas medianas / Tablets (600px a 900px) */
+@media (min-width: 600px) {
+    .wrap {
+        max-width: 500px; /* Centramos y damos aire */
+    }
+
+    .brand-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* 3. Ajuste específico para el Alto de pantalla (Pantallas cortas) */
+@media (max-height: 700px) {
+    body {
+        align-items: flex-start; /* Evita que el contenido se corte arriba/abajo */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* 4. Solución para el texto legal y el email (Evitar desbordes) */
+.alt-line, .fineprint p, .notice p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* 5. Mejora visual para tablets de las páginas legales */
+@media (min-width: 768px) {
+    .legal-card {
+        padding: 40px; /* Más elegante en pantallas grandes */
+    }
+    
+    .legal-title h1 {
+        font-size: 2.2rem;
+    }
 }
